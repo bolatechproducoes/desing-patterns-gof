@@ -1,0 +1,18 @@
+=== DESING PATTERNS - GoF ===
+
+
+=== # CREATIONAL PATTERNS # ===
+
+- Padrões de criação, tem como objetivo abstrair o processo de instanciação
+  dos objetos e encapsular o conhecimento sobre as classes concretas utilizadas. 
+
+=== SINGLETON ===
+
+- Garantir que uma classe tenha somente uma instância no programa e fornecer
+  um ponto de acesso global para a mesma.
+- Geralmente utilizado para acessar recursos compartilhados como acesso à
+  base de dados, interfaces gráficas, sistemas de arquivos, etc...
+- Pode ser utilizado para substituir variáveis globais.
+- Utiliza construtor privado e cria uma única instância através do getter.
+- Utilizado para ter uma instância disponível em todo o programa.
+- Utilizado para substituir variáveis globais. 

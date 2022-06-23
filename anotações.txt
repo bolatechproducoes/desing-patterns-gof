@@ -45,3 +45,21 @@
 - É possível manter registro dos objetos protótipos.
 - Geralmente é criado apenas com um método 'clone' dentro do objeto protótipo.
 - Não deixa as classes visiveis para os códigos que utilizam os objetos clone.
+
+   === FACTORY METHOD ===
+
+- Definir a interface para criar um objeto, delegando as subclasses a decisão
+  de que classe instanciar.
+- Permite adiar a instanciação para as subclasses.
+- Factorys são operações que criam objetos.
+- Oculta a lógica de instanciação do código cliente.
+- Pode ser criado ou sobrescrito por subclasses.
+- Permite a criação de novas factorys sem alterar o código já escrito.
+- Permite utilizar parâmetros para definir o objeto que será criado.
+- Utilizado quando não se sabe os tipos de objeto que serão necessários
+  ao código.
+- Permite a exetensão da factory para criar novos objetos seguindo o OCP do
+  SOLID.
+- Desacopla o código que cria do que utiliza o código seguindo o SRP do SOLID.
+- Serve de hook para que as subclasses decidam a lógica de criação do objeto.
+- Utilizado para eliminar a duplicação de código na criação de objetos.

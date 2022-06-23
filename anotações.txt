@@ -29,3 +29,19 @@
 - Permite 'method chaining' sequencias de encadeamento de metódos.
 - O objeto final pode variar de acordo com a necessidade.
 - É um padrão complexo.
+
+   === Prototype ===
+
+- Especificar os tipos de objeto a serem criados usando uma instância-protótipo
+  e criar novos objetos pela cópia desse protótipo.
+- JavaScritp e TypeScript são linguagens baseadas em protótipos. Para isso
+  utiliza o método: Object.create(prototypeObject)
+- É possivel literalmente fazer um objeto herdar de outro.
+- A herança é delegada ao protótipo pelo objeto.
+- Determina o tipo de objeto a ser criado pelo seu protótipo.
+- É utilizado para evitar a recriação de objetos 'caros', que demandam muito
+  serviço de construção ou recursos computacionais.
+- Ajuda a evitar a explosão de subclasses (uso do extends).
+- É possível manter registro dos objetos protótipos.
+- Geralmente é criado apenas com um método 'clone' dentro do objeto protótipo.
+- Não deixa as classes visiveis para os códigos que utilizam os objetos clone.

@@ -4,7 +4,9 @@
 === # CREATIONAL PATTERNS # ===
 
 - Padrões de criação, tem como objetivo abstrair o processo de instanciação
-  dos objetos e encapsular o conhecimento sobre as classes concretas utilizadas. 
+  dos objetos e encapsular o conhecimento sobre as classes concretas utilizadas.
+- São padrões relacionados com a criação de objetos.
+- Tem seu foco nas interfaces dos objetos e não na implementação. 
 
 === SINGLETON ===
 
@@ -63,3 +65,25 @@
 - Desacopla o código que cria do que utiliza o código seguindo o SRP do SOLID.
 - Serve de hook para que as subclasses decidam a lógica de criação do objeto.
 - Utilizado para eliminar a duplicação de código na criação de objetos.
+
+   === ABSTRACT FACTORY ===
+
+- Fornece interface de criação de familias/grupos de objetos relacionados ou
+  dependentes sem espicificar suas classes concretas.
+- Geralmente e composto por vários Factory Methods.
+- Tende a agrupar famílias de produtos compatíveis criando uma fábrica concreta
+  para cada grupo/família de objetos.
+- Separa o código que cria do que utiliza os objetos seguindo o SRP do SOLID.
+- Facilita a implementação de novos grupos/famílias de objetos seguindo o
+  OCP do SOLID.
+- Os grupos podem ser utilizados para definir configurações ou padrões distintos
+  para grupos distintos, como por exemplo uma familia tem o padrão de um OS
+  especifíco e a outra de outro, ou uma traz as configurações de conexão com
+  um bd e a outra a de outro bd.
+- Facilita para gerar relação e composição entre objetos de uma mesma família.
+- Os objetos podem, ou não, ser utilizados em conjunto.
+- É necessário restringir a relação dos objetos a sua família caso trabalhem
+  em conjunto.
+- Fornece uma biblioteca de classes de produtos revelando somente suas
+  interfaces e não sua implementação.
+- Garante a compatibilidade entre objetos da mesma família.

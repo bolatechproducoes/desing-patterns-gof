@@ -32,7 +32,7 @@
 - O objeto final pode variar de acordo com a necessidade.
 - É um padrão complexo.
 
-   === Prototype ===
+   === PROTOTYPE ===
 
 - Especificar os tipos de objeto a serem criados usando uma instância-protótipo
   e criar novos objetos pela cópia desse protótipo.
@@ -87,3 +87,25 @@
 - Fornece uma biblioteca de classes de produtos revelando somente suas
   interfaces e não sua implementação.
 - Garante a compatibilidade entre objetos da mesma família.
+
+   === # STRUCTURAL ===
+
+- Se preocupam com a forma como os objetos são compostos para formar
+  estruturas maiores.
+
+   === COMPOSITE ===
+
+- Utiliza estrutura de árvore para representar a hierarquia das partes.
+- Permite que os clientes tratem de maneira uniforme, tanto objetos individuais,
+  quanto composições de objetos.
+- Permite utilizar objetos simples para criar estruturas complexas.
+- Organiza a herança entre objetos atráves de hierarquia.
+- Na organização da árvore/tree, os nós internos são os objetos Composite,
+  e os nós externos (finais) são os objetos Leaf (responsável pelo serviço
+  final do composite).
+- Utiliza métodos para implementar, remover e obter os nós nos composites e leafs.
+- Os objetos composite delegam o serviço para as estruturas filhos e os objetos
+  leaf são os que executam o serviço.
+- Serve para que o código cliente trate da mesma forma objetos simples e compostos.
+- Facilita o polimorfismo, a recursão e a inclusão de novos elementos.
+- Tende a quebrar o padrão ISP do SOLID.

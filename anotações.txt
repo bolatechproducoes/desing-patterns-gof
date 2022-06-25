@@ -130,4 +130,21 @@
   terceiros.
 - Pode servir para adicionar funcionalidades em subclasses sem ter que extende-las,
   similar ao que o Decorator faz.
+- Diferente do bridge faz as ações funcionarem depois de terem sido projetadas.
 - Aplica o SRP e o OCP do SOLID.
+
+   === BRIDGE ===
+
+- Bastante similar ao adapter (o que diferencia é a intenção).
+- A intenção do bridge é desacoplar uma abstração de sua implementação, para
+  que as duas possam variar e evoluir independemente ( ABSTRAÇÃO - é um código
+  de alto nível que geralmente delega ações para outro objeto, IMPLEMENTAÇÃO -
+  é o código que realiza as tarefas).
+- Diferente do adapter faz as ações funcionarem antes de existirem.
+- Utiliza composição em vez de herança.
+- Utilizado no desenvolvimento do software quando o sistema for ter variações de
+  abstrações e implementações (é aplicado no desenvolvimento quando se percebe que
+  haverá a necessidade de criar adapters futuramente no código que esta sendo
+  desenvolvido).
+- Utilizado para trocar implementações durante o tempo de execução.
+- Aplica o SRP e implementa o OCP do SOLID.

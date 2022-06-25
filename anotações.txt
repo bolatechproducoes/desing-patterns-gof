@@ -109,3 +109,25 @@
 - Serve para que o código cliente trate da mesma forma objetos simples e compostos.
 - Facilita o polimorfismo, a recursão e a inclusão de novos elementos.
 - Tende a quebrar o padrão ISP do SOLID.
+
+   === ADAPTER ===
+
+- Tem como objetivo converter a interface de uma classe em outra classe, que
+  seja esperada pelo código cliente.
+- Permite que algumas classes trabalhem junto mesmo tendo interfaces imcompatíveis.
+- Funciona com um adaptador, gera compatibilidade entre interfaces incompatíveis.
+- Utilizado para definir limites dentro de camadas da aplicação.
+- Pode ser utilizado para compatibilizar interfaces de código legado com um
+  novo código.
+- Utiliza estrutura por composição ou herança múltipla (herança múltipla nem
+  todas as linguagens suportam).
+- Liga a solicitação do código cliente com o framework, lib ou código próprio
+  que irá executar a ação solicitada.
+- Facilita a manutenção e troca de framework, libs e códigos legados concentrando
+  em um único ponto (adapter) a necessidade de alteração de código para adaptar
+  ao novo código.
+- Utilizado para deixar o código sem dependência direta de código legado ou de
+  terceiros.
+- Pode servir para adicionar funcionalidades em subclasses sem ter que extende-las,
+  similar ao que o Decorator faz.
+- Aplica o SRP e o OCP do SOLID.

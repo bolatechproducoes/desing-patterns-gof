@@ -148,3 +148,21 @@
   desenvolvido).
 - Utilizado para trocar implementações durante o tempo de execução.
 - Aplica o SRP e implementa o OCP do SOLID.
+
+   === DECORATOR ===
+
+- Tem como função agregar responsabilidades adicionais a um objeto de forma
+  dinâmica.
+- Fornece uma alternativa flexível a utilização de subclasses para extender
+  funcionalidades.
+- Adiciona funcionalidades sem alterar o objeto original.
+- Utiliza composição ao invés de herança.
+- Utilizado para adicionar funcionalidades em tempo de execução.
+- Finge ser o objeto decorado, mas repassa as chamadas de método ao objeto.
+- Pode executar ações antes e depois das chamadas de método do objeto decorado.
+- Pode manipular dados antes do retorno.
+- Utilizado para adicionar funcionalidades sem alterar o código existente.
+- Utilizado quando se quer ter composição ao invés de herança.
+- Utilizado para reduzir as subclasses.
+- Pode se utilizar mais de um decorator em um objeto.
+- Aplica OCP do SOLID.

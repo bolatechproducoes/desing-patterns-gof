@@ -81,10 +81,13 @@
 * Garante a compatibilidade entre objetos da mesma família.
 * Diagrama:
 ![diagrama-abstract-factory-book](/diagramas/05-creational-abstract-factory-book.png)
+---
 * Exemplo 1:
 ![diagrama-abstract-factory-example1](/diagramas/06-creational-abstract-factory-example-1.png)
+---
 * Exemplo 2:
 ![diagrama-abstract-factory-example2](/diagramas/07-creational-abstract-factory-example-2.png)
+---
 * Exemplo 3:
 ![diagrama-abstract-factory-example3](/diagramas/08-creational-abstract-factory-example-3.png)
 ---
@@ -125,6 +128,7 @@
 * Aplica o SRP e o OCP do SOLID.
 * Diagrama com Classe:
 ![diagrama-adapter-class](/diagramas/10-structural-adapter-class.png)
+---
 * Diagrama com Objeto:
 ![diagrama-adapter-object](/diagramas/11-structural-adapter-object.png)
 ---
@@ -140,16 +144,22 @@
 * Aplica o SRP e implementa o OCP do SOLID.
 * Diagrama:
 ![diagrama-bridge](/diagramas/12-structural-bridge.png)
+---
 * Problema 1:
 ![diagrama-bridge-problem1](/diagramas/13-structural-bridge-problem-1.png)
+---
 * Problema 2:
 ![diagrama-bridge-problem2](/diagramas/14-structural-bridge-problem-2.png)
+---
 * Problema 3:
 ![diagrama-bridge-problem3](/diagramas/15-structural-bridge-problem-3.png)
+---
 * Problema 4:
 ![diagrama-bridge-problem4](/diagramas/16-structural-bridge-problem-4.png)
+---
 * Problema 5:
 ![diagrama-bridge-problem5](/diagramas/17-structural-bridge-problem-5.png)
+---
 * Solução:
 ![diagrama-bridge-solution](/diagramas/18-structural-bridge-solution.png)
 ---
@@ -184,4 +194,21 @@
 * Tem como vantagem facilitar o acesso as entradas do sistema.
 * Diagrama:
 ![diagrama-façade](/diagramas/20--structural-facade.png)
+---
+
+## PROXY
+
+* Tem como intenção fornecer um substituto ou marcador de localização para outro objeto com o objetivo de controlar o acesso a esse objeto.
+* Utiliza a composição como o Composite e Decorator.
+* Utiliza um objeto proxy que finge ser um objeto real.
+* Utilizado para controle de acesso, logs, ache, lazy instantiation, lazy evaluation e distribuição de serviços.
+* Escolhe como e quando repassar chamadas de métodos para o objeto real.
+* Pode executar ações antes e depois das chamadas de método do objeto real.
+* Tem variações: proxy virtual, proxy remoto, proxy de proteção, proxy inteligente, proxy de logs, etc...
+* **Proxy Virtual:** controla o acesso a recursos que podem ser caros para criar ou utilizar.
+* **Proxy Remoto:** controla o acesso a recursos que estão em servidores remotos.
+* **Proxy de Proteção:** controla o acesso a recursos que necessitam de autenticação ou permissões.
+* **Proxy Inteligente:** além de controlar acesso ao objeto, também executa tarefas adicionais para saber quando e como executar determinadas ações.
+* Implementa o OCP do SOLID.
+![diagrama-proxy](/diagramas/21-structural-proxy.png)
 ---

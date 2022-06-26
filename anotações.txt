@@ -182,3 +182,24 @@
   códigos cliente ou por outras fachadas minizando este problema.
 - Utilizado para criar pontos de entrada para determinadas partes de um sistema.
 - Tem como vantagem facilitar o acesso as entradas do sistema.
+
+   === PROXY ===
+
+- Tem como intenção fornecer um substituto ou marcador de localização para outro
+  objeto com o objetivo de controlar o acesso a esse objeto.
+- Utiliza a composição como o Composite e Decorator.
+- Utiliza um objeto proxy que finge ser um objeto real.
+- Utilizado para controle de acesso, logs, ache, lazy instantiation, lazy evaluation
+  e distribuição de serviços.
+- Escolhe como e quando repassar chamadas de métodos para o objeto real.
+- Pode executar ações antes e depois das chamadas de método do objeto real.
+- Tem variações: proxy virtual, proxy remoto, proxy de proteção, proxy inteligente,
+  proxy de logs, etc...
+- Proxy Virtual: controla o acesso a recursos que podem ser caros para criar ou
+                 utilizar.
+- Proxy Remoto: controla o acesso a recursos que estão em servidores remotos.
+- Proxy de Proteção: controla o acesso a recursos que necessitam de autenticação
+                     ou permissões.
+- Proxy Inteligente: além de controlar acesso ao objeto, também executa tarefas
+                     adicionais para saber quando e como executar determinadas ações.
+- Implementa o OCP do SOLID.

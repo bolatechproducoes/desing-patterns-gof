@@ -1,5 +1,5 @@
 # DESING PATTERNS - GoF
-Repositório criado a partir das aulas da sessão de Desing Patterns do [curso de JavaScript e TypeScript](https://www.udemy.com/course/curso-de-javascript-moderno-do-basico-ao-avancado/) do professor [Luiz Otávio Miranda](https://www.udemy.com/user/luiz-otavio-miranda/) na Udemy. As anotações e abaixo são as que fiz durante as aulas e os diagramas foram baixados do [repositório](https://github.com/luizomf/design-patterns-typescript) do professor Luiz Otávio, as vídeo aulas desta sessão podem ser encontradas no seu canal do YouTube neste [link](https://www.youtube.com/watch?v=MqddY6Ochkc&list=PLbIBj8vQhvm0VY5YrMrafWaQY2EnJ3j8H).
+* Repositório criado a partir das aulas da sessão de Desing Patterns do [Curso de JavaScript e TypeScript](https://www.udemy.com/course/curso-de-javascript-moderno-do-basico-ao-avancado/) do professor [Luiz Otávio Miranda](https://www.udemy.com/user/luiz-otavio-miranda/) na Udemy. As anotações abaixo são as que fiz durante as aulas e os diagramas foram baixados do [repositório](https://github.com/luizomf/design-patterns-typescript) do professor Luiz Otávio, as vídeo aulas desta sessão podem ser encontradas no seu canal do YouTube [clicando aqui](https://www.youtube.com/watch?v=MqddY6Ochkc&list=PLbIBj8vQhvm0VY5YrMrafWaQY2EnJ3j8H).
 ---
 # CREATIONAL PATTERNS
 
@@ -15,8 +15,8 @@ Repositório criado a partir das aulas da sessão de Desing Patterns do [curso d
 * Utiliza construtor privado e cria uma única instância através do getter.
 * Utilizado para ter uma instância disponível em todo o programa.
 * Utilizado para substituir variáveis globais.
-Diagrama:
-(diagrama-singleton)(/diagramas/01-creational-singleton.png)
+* Diagrama:
+![diagrama-singleton](/diagramas/01-creational-singleton.png)
 ---
 
 ## BUILDER
@@ -28,8 +28,8 @@ Diagrama:
 * Permite 'method chaining' sequencias de encadeamento de metódos.
 * O objeto final pode variar de acordo com a necessidade.
 * É um padrão complexo.
-Diagrama:
-(diagrama-builder)(/diagramas/01-creational-builder.png)
+* Diagrama:
+![diagrama-builder](/diagramas/02-creational-builder.png)
 ---
 
 ## PROTOTYPE
@@ -44,8 +44,8 @@ Diagrama:
 * É possível manter registro dos objetos protótipos.
 * Geralmente é criado apenas com um método 'clone' dentro do objeto protótipo.
 * Não deixa as classes visiveis para os códigos que utilizam os objetos clone.
-Diagrama:
-(diagrama-prototype)(/diagramas/03-creational-prototype.png)
+* Diagrama:
+![diagrama-prototype](/diagramas/03-creational-prototype.png)
 ---
 
 ## FACTORY METHOD
@@ -62,8 +62,8 @@ Diagrama:
 * Desacopla o código que cria do que utiliza o código seguindo o SRP do SOLID.
 * Serve de hook para que as subclasses decidam a lógica de criação do objeto.
 * Utilizado para eliminar a duplicação de código na criação de objetos.
-Diagrama:
-(diagrama-factory-method)(/diagramas/04-creational-factory-method.png)
+* Diagrama:
+![diagrama-factory-method](/diagramas/04-creational-factory-method.png)
 ---
 
 ## ABSTRACT FACTORY
@@ -79,14 +79,17 @@ Diagrama:
 * É necessário restringir a relação dos objetos a sua família caso trabalhem em conjunto.
 * Fornece uma biblioteca de classes de produtos revelando somente suas interfaces e não sua implementação.
 * Garante a compatibilidade entre objetos da mesma família.
-Diagramas:
-(diagrama-abstract-factory-book)(/diagramas/05-creational-abstract-factory-book.png)
-(diagrama-abstract-factory-example1)(/diagramas/06-creational-abstract-factory-example-1.png)
-(diagrama-abstract-factory-example2)(/diagramas/07-creational-abstract-factory-example-2.png)
-(diagrama-abstract-factory-example3)(/diagramas/08-creational-abstract-factory-example-3.png)
+* Diagrama:
+![diagrama-abstract-factory-book](/diagramas/05-creational-abstract-factory-book.png)
+* Exemplo 1:
+![diagrama-abstract-factory-example1](/diagramas/06-creational-abstract-factory-example-1.png)
+* Exemplo 2:
+![diagrama-abstract-factory-example2](/diagramas/07-creational-abstract-factory-example-2.png)
+* Exemplo 3:
+![diagrama-abstract-factory-example3](/diagramas/08-creational-abstract-factory-example-3.png)
 ---
 
-# STRUCTURAL
+# STRUCTURAL PATTERNS
 
 * Se preocupam com a forma como os objetos são compostos para formar estruturas maiores.
 
@@ -102,8 +105,8 @@ Diagramas:
 * Serve para que o código cliente trate da mesma forma objetos simples e compostos.
 * Facilita o polimorfismo, a recursão e a inclusão de novos elementos.
 * Tende a quebrar o padrão ISP do SOLID.
-Diagrama:
-(diagrama-composite)(/diagramas/09-structural-composite.png)
+* Diagrama:
+![diagrama-composite](/diagramas/09-structural-composite.png)
 ---
 
 ## ADAPTER
@@ -120,9 +123,10 @@ Diagrama:
 * Pode servir para adicionar funcionalidades em subclasses sem ter que extende-las, similar ao que o Decorator faz.
 * Diferente do bridge faz as ações funcionarem depois de terem sido projetadas.
 * Aplica o SRP e o OCP do SOLID.
-Diagramas:
-(diagrama-adapter-class)(/diagramas/10-structural-adapter-class.png)
-(diagrama-adapter-object)(/diagramas/11-structural-adapter-object.png)
+* Diagrama com Classe:
+![diagrama-adapter-class](/diagramas/10-structural-adapter-class.png)
+* Diagrama com Objeto:
+![diagrama-adapter-object](/diagramas/11-structural-adapter-object.png)
 ---
 
 ## BRIDGE
@@ -134,16 +138,20 @@ Diagramas:
 * Utilizado no desenvolvimento do software quando o sistema for ter variações de abstrações e implementações (é aplicado no desenvolvimento quando se percebe que haverá a necessidade de criar adapters futuramente no código que esta sendo desenvolvido).
 * Utilizado para trocar implementações durante o tempo de execução.
 * Aplica o SRP e implementa o OCP do SOLID.
-Diagrama:
-(diagrama-bridge)(/diagramas/12-structural-bridge.png)
-Problemas:
-(diagrama-bridge-problem1)(/diagramas/13-structural-bridge-problem-1.png)
-(diagrama-bridge-problem2)(/diagramas/14-structural-bridge-problem-2.png)
-(diagrama-bridge-problem3)(/diagramas/15-structural-bridge-problem-3.png)
-(diagrama-bridge-problem4)(/diagramas/16-structural-bridge-problem-4.png)
-(diagrama-bridge-problem5)(/diagramas/17-structural-bridge-problem-5.png)
-Solução:
-(diagrama-bridge-solution)(/diagramas/18-structural-bridge-solution.png)
+* Diagrama:
+![diagrama-bridge](/diagramas/12-structural-bridge.png)
+* Problema 1:
+![diagrama-bridge-problem1](/diagramas/13-structural-bridge-problem-1.png)
+* Problema 2:
+![diagrama-bridge-problem2](/diagramas/14-structural-bridge-problem-2.png)
+* Problema 3:
+![diagrama-bridge-problem3](/diagramas/15-structural-bridge-problem-3.png)
+* Problema 4:
+![diagrama-bridge-problem4](/diagramas/16-structural-bridge-problem-4.png)
+* Problema 5:
+![diagrama-bridge-problem5](/diagramas/17-structural-bridge-problem-5.png)
+* Solução:
+![diagrama-bridge-solution](/diagramas/18-structural-bridge-solution.png)
 ---
 
 ## DECORATOR
@@ -161,8 +169,8 @@ Solução:
 * Utilizado para reduzir as subclasses.
 * Pode se utilizar mais de um decorator em um objeto.
 * Aplica OCP do SOLID.
-Diagrama:
-(diagrama-decorator)(/diagramas/19-structural-decorator.png)
+* Diagrama:
+![diagrama-decorator](/diagramas/19-structural-decorator.png)
 ---
 
 ## FAÇADE
@@ -174,6 +182,6 @@ Diagrama:
 * É comum se tornar uma 'God Class' que faz tudo, quebrando o SRP do SOLID, mas permite a criação de fachadas(façade) adicionais que podem ser utilizados por códigos cliente ou por outras fachadas minizando este problema.
 * Utilizado para criar pontos de entrada para determinadas partes de um sistema.
 * Tem como vantagem facilitar o acesso as entradas do sistema.
-Diagrama:
-(diagrama-façade)(/diagramas/20--structural-facade.png)
+* Diagrama:
+![diagrama-façade](/diagramas/20--structural-facade.png)
 ---

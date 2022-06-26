@@ -166,3 +166,19 @@
 - Utilizado para reduzir as subclasses.
 - Pode se utilizar mais de um decorator em um objeto.
 - Aplica OCP do SOLID.
+
+   === FAÇADE ===
+
+- Tem como intenção fornecer uma interface unificada para um conjunto de interfaces
+  em um subsistema.
+- Define uma interface de alto nível para facilitar o uso do subsistema (cria um
+  objeto de fachada para um sistema mais complexo).
+- Tem por objetivo unificar a chamada de métodos de diversos objetos em uma única
+  interface.
+- Não tem a intenção de ocultar nada do código cliente, somente facilitar o acesso
+  aos metódos e valores.
+- É comum se tornar uma 'God Class' que faz tudo, quebrando o SRP do SOLID, mas
+  permite a criação de fachadas(façade) adicionais que podem ser utilizados por
+  códigos cliente ou por outras fachadas minizando este problema.
+- Utilizado para criar pontos de entrada para determinadas partes de um sistema.
+- Tem como vantagem facilitar o acesso as entradas do sistema.

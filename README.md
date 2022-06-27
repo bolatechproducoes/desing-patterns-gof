@@ -212,3 +212,13 @@
 * Implementa o OCP do SOLID.
 ![diagrama-proxy](/diagramas/21-structural-proxy.png)
 ---
+## FLYWEIGHT
+
+* Utilizado para refatoração quando o sistema tem um grande consumo de memória.
+* Tem como objetivo utilizar o compartilhamento para suportar grandes quantidades de objetos de forma granular.
+* Separa as partes mutaveis(extrinseco) das não mutaveis(intrinseco) dos objetos para compartilhar as não mutaveis e diminuir o uso da memória.
+* É um padrão de otimização.
+* Só deve ser utilizado para solucionar problemos de uso excessivo de memória RAM.
+* Só utilize se for realmente necessário e a maioria dos estados do objeto puderem se tornar extrinsecos.
+![diagrama-flyweight](/diagramas/22-structural-flyweight.png)
+---

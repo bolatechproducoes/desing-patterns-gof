@@ -222,3 +222,22 @@
 * Só utilize se for realmente necessário e a maioria dos estados do objeto puderem se tornar extrinsecos.
 ![diagrama-flyweight](/diagramas/22-structural-flyweight.png)
 ---
+ # BEHAVIOURAL PATTERNS
+
+* Se preocupam com algoritmos e a atribuição de responsabilidades entre objetos.
+* Além de descrever padrões de objetos e classes também podem descrever os padrões de comunicação entre eles.
+* Afastam o foco do fluco de controle e permitem se concentrar na maneira como os objetos são interconectados.
+
+## STRATEGY
+
+* Tem como objetivo definir uma família de algoritmos, encapsular cada um deles e fazê-los intercambiáveis.
+* Permite que algoritmos variem indendente dos clientes que o utilizam.
+* Permite separar as variações dos algoritmos da regra de negócio - SRP.
+* Define uma família de algoritmos onde cada um tem uma variação diferente.
+* Permite a troca de algoritmos em tempo de execução através da composição.
+* Permite criar varios algoritmos sem a necessidade de condicionais.
+* Utilize para substituir condicionais que só alteram o valor final de um algoritmo.
+* Aplica SRP e OCP do SOLID.
+* O resultado do Strategy pode ser obtido através de funções.
+![diagrama-strategy](/diagramas/23-behavioural-strategy.png)
+---

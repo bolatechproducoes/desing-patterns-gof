@@ -241,3 +241,15 @@
 * O resultado do Strategy pode ser obtido através de funções.
 ![diagrama-strategy](/diagramas/23-behavioural-strategy.png)
 ---
+
+## COMMAND
+
+* Tem como objetivo encapsular uma solicitação como um objeto para permitir a parametrização de diferentes clientes com diferentes solicitações, enfileiramento e registros(logs) de solicitações e suporte a operações que possam ser desfeitas.
+* Desacopla o objeto que envia a solicitação do que recebe a solicitação.
+* Se baseia em funções de callback na POO.
+* Permite que comandos possam ser enfileirados, armazenados ou desfeitos.
+* Permite o registro de alterações(logs) caso precisem ser desfeitas.
+* Permite a criação de comandos(solicitações) compostos.
+* Utiliza composição ao invés de herança.
+![diagrama-command](/diagramas/24-behavioural-command.png)
+---

@@ -275,3 +275,7 @@
 - Facilita a adição de novos estados sem a necessidade de alterar os estados já
   definidos.
 - Aplica o SRP do SOLID.
+
+   === MEDIATOR ===
+
+- 

@@ -1,4 +1,4 @@
-import { ShoppingOrder } from './shipping-order';
+import { ShoppingOrder } from './shopping-order';
 import { ShoppingOrderState } from './shopping-order-state';
 
 export class OrderRejected implements ShoppingOrderState {

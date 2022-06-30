@@ -291,3 +291,17 @@
 * Exemplo:
 ![diagrama-state-exemplo](/diagramas/27-behavioural-state-exemplo.png)
 ---
+
+## MEDIATOR
+
+* Tem como objetivo encapsular como um conjunto de objetos interagem.
+* Promove o acoplamento fraco ao evitar que os objetos se refiram explicitamente uns aos outros, permitindo a variação de interações.
+* Desacopla objetos que estariam diretamente ligados.
+* Centraliza a comunicação em um objeto.
+* Serve para diminuir ou extinguir o acoplamento direto entre classes.
+* Substitui a comunicação muitos-para-muitos pela um-para-muitos.
+* Encapsula a comunicação entre objetos.
+* Utilizar com cuidado para não se tornar uma "god class".
+* Diagrama:
+![diagrama-mediator](/diagramas/28-behavioural-mediator.png)
+---

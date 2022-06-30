@@ -248,3 +248,17 @@
 - Permite o registro de alterações(logs) caso precisem ser desfeitas.
 - Permite a criação de comandos(solicitações) compostos.
 - Utiliza composição ao invés de herança.
+
+   === MEMENTO ===
+
+- Normalmente utilizado junto com o Command.
+- Tem a intenção de sem violar o encapsulamento, capturar e externalizar um estado
+  interno de um objeto, de modo que o objeto possa ser restaurado posteriormente.
+- Desacopla da classe originadora a responsabilidade pelos backups.
+- Garante o encapsulamento e consistência dos backups.
+- Utiliza o estado para salvar e poder retornar o objeto ao seu estado.
+- Os dados(estado) do memento são readonly para preservar a integridade dos dados.
+- Utiliza uma classe 'caretaker' para gerenciar os backups.
+- A classe 'caretaker' não pode ter acesso aos dados do objeto originário.
+- Utilizado para criar funções de desfazer em sistemas.
+- Aplica o SRP do SOLID.

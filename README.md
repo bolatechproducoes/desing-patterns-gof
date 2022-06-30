@@ -1,5 +1,6 @@
 # DESING PATTERNS - GoF
-* Repositório criado a partir das aulas da sessão de Desing Patterns do [Curso de JavaScript e TypeScript](https://www.udemy.com/course/curso-de-javascript-moderno-do-basico-ao-avancado/) do professor [Luiz Otávio Miranda](https://www.udemy.com/user/luiz-otavio-miranda/) na Udemy. As anotações abaixo são as que fiz durante as aulas e os diagramas foram baixados do [repositório](https://github.com/luizomf/design-patterns-typescript) do professor Luiz Otávio, as vídeo aulas desta sessão podem ser encontradas no seu canal do YouTube [clicando aqui](https://www.youtube.com/watch?v=MqddY6Ochkc&list=PLbIBj8vQhvm0VY5YrMrafWaQY2EnJ3j8H).
+* Os Padrões de Projeto (Desing Patterns) da Gang of Four (GoF) são orientações de como solucionar problemas e construir códigos utilizando padrões. Estas são sugestões e podem ser aplicadas de diversas formas para atender necessidades específicas de cada sistema. Estes padrões são descritos no livro [Desing Patterns - Elements of Reusable Object-Oriented Software](https://docero.com.br/doc/see055n) escrito por Erich Gamma, John Vlissides, Richard Helm e Ralph Johnson a guangue dos quatro (GoF).
+* Este repositório foi criado a partir das aulas da sessão de Desing Patterns do [Curso de JavaScript e TypeScript](https://www.udemy.com/course/curso-de-javascript-moderno-do-basico-ao-avancado/) do professor [Luiz Otávio Miranda](https://www.udemy.com/user/luiz-otavio-miranda/) na Udemy. As anotações abaixo são as que fiz durante as aulas e os diagramas foram baixados do [repositório](https://github.com/luizomf/design-patterns-typescript) do professor Luiz Otávio, as vídeo aulas desta sessão podem ser encontradas no seu canal do YouTube [clicando aqui](https://www.youtube.com/watch?v=MqddY6Ochkc&list=PLbIBj8vQhvm0VY5YrMrafWaQY2EnJ3j8H).
 ---
 # CREATIONAL PATTERNS
 
@@ -210,6 +211,7 @@
 * **Proxy de Proteção:** controla o acesso a recursos que necessitam de autenticação ou permissões.
 * **Proxy Inteligente:** além de controlar acesso ao objeto, também executa tarefas adicionais para saber quando e como executar determinadas ações.
 * Implementa o OCP do SOLID.
+* Diagrama:
 ![diagrama-proxy](/diagramas/21-structural-proxy.png)
 ---
 ## FLYWEIGHT
@@ -220,6 +222,7 @@
 * É um padrão de otimização.
 * Só deve ser utilizado para solucionar problemos de uso excessivo de memória RAM.
 * Só utilize se for realmente necessário e a maioria dos estados do objeto puderem se tornar extrinsecos.
+* Diagrama:
 ![diagrama-flyweight](/diagramas/22-structural-flyweight.png)
 ---
  # BEHAVIOURAL PATTERNS
@@ -227,6 +230,7 @@
 * Se preocupam com algoritmos e a atribuição de responsabilidades entre objetos.
 * Além de descrever padrões de objetos e classes também podem descrever os padrões de comunicação entre eles.
 * Afastam o foco do fluco de controle e permitem se concentrar na maneira como os objetos são interconectados.
+* Tem como foco o comportamento dos algoritmos e objetos.
 
 ## STRATEGY
 
@@ -239,6 +243,7 @@
 * Utilize para substituir condicionais que só alteram o valor final de um algoritmo.
 * Aplica SRP e OCP do SOLID.
 * O resultado do Strategy pode ser obtido através de funções.
+* Diagrama:
 ![diagrama-strategy](/diagramas/23-behavioural-strategy.png)
 ---
 
@@ -251,6 +256,7 @@
 * Permite o registro de alterações(logs) caso precisem ser desfeitas.
 * Permite a criação de comandos(solicitações) compostos.
 * Utiliza composição ao invés de herança.
+* Diagrama:
 ![diagrama-command](/diagramas/24-behavioural-command.png)
 ---
 
@@ -266,5 +272,22 @@
 * A classe 'caretaker' não pode ter acesso aos dados do objeto originário.
 * Utilizado para criar funções de desfazer em sistemas.
 * Aplica o SRP do SOLID.
+* Diagrama:
 ![diagrama-memento](/diagramas/25-behavioural-memento.png)
+---
+
+## STATE
+
+* Tem a intenção de permitir que um objeto altere seu comportamento quando seu estado interno for alterado, dando a impressão que o objeto mudou de classe.
+* Coloca os métodos dentro do estado (os métodos variam dependendo do estado).
+* Diminui o uso de condicionais if.
+* Pode utilizar uma família de estados.
+* Desacopla o estado de um objeto contexto e seus métodos em objetos de estado separados.
+* Facilita a adição de novos estados sem a necessidade de alterar os estados já definidos.
+* Aplica o SRP do SOLID.
+* Diagrama:
+![diagrama-state](/diagramas/26-behavioural-state.png)
+---
+* Exemplo:
+![diagrama-state-exemplo](/diagramas/27-behavioural-state-exemplo.png)
 ---

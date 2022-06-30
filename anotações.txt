@@ -262,3 +262,16 @@
 - A classe 'caretaker' não pode ter acesso aos dados do objeto originário.
 - Utilizado para criar funções de desfazer em sistemas.
 - Aplica o SRP do SOLID.
+
+   === STATE ===
+
+- Tem a intenção de permitir que um objeto altere seu comportamento quando seu
+  estado interno for alterado, dando a impressão que o objeto mudou de classe.
+- Coloca os métodos dentro do estado (os métodos variam dependendo do estado).
+- Diminui o uso de condicionais if.
+- Pode utilizar uma família de estados.
+- Desacopla o estado de um objeto contexto e seus métodos em objetos de estado
+  separados.
+- Facilita a adição de novos estados sem a necessidade de alterar os estados já
+  definidos.
+- Aplica o SRP do SOLID.

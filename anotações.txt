@@ -316,3 +316,19 @@
 - Evita a duplicação de código e permite alterar com facilidade os algoritmos.
 - Aplica o SRP e o OCP do SOLID.
 - Pode violar a LSP do SOLID ao alterar o comportamento dos métodos nas subclasses.
+
+   === OBSERVER ===
+
+- Tem a intenção de definir uma dependência um para muitos entre objetos, de modo que,
+  quando um objeto muda de estado, todos os seus dependentes são automaticamente
+  notificados e atualizados.
+- Utiliza métodos para adicionar, remover e notificar os observers(objetos que
+  observam o observable (objeto observável)).
+- Observables tem referência para todos seus observers.
+- Observers devem ter meios de receber notificação de seus observables (geralmente
+  feito com apenas um método).
+- Similar a padrões do tipo publisher/subscribes.
+- O observable pode ser utilizado/controlado por outro objeto.
+- Facilita a comunicação entre objetos em tempo de execução.
+- Aplica o SRP e OCP do SOLID.
+- É bastante complexo e difícil manter a ordem de envio das notificações.

@@ -336,3 +336,22 @@
 * Diagrama:
 ![diagrama-template-method](/diagramas/30-behavioural-template-method.png)
 ---
+
+## OBSERVER
+
+* Tem a intenção de definir uma dependência um para muitos entre objetos, de modo que,
+  quando um objeto muda de estado, todos os seus dependentes são automaticamente
+  notificados e atualizados.
+* Utiliza métodos para adicionar, remover e notificar os observers(objetos que
+  observam o observable (objeto observável)).
+* Observables tem referência para todos seus observers.
+* Observers devem ter meios de receber notificação de seus observables (geralmente
+  feito com apenas um método).
+* Similar a padrões do tipo publisher/subscribes.
+* O observable pode ser utilizado/controlado por outro objeto.
+* Facilita a comunicação entre objetos em tempo de execução.
+* Aplica o SRP e OCP do SOLID.
+* É bastante complexo e difícil manter a ordem de envio das notificações.
+* Diagrama:
+![diagrama-observer](/diagramas/31-behavioural-observer.png)
+---

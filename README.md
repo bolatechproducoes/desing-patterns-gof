@@ -319,3 +319,20 @@
 * Diagrama:
 ![diagrama-chain-of-responsibility](/diagramas/29-behavioural-chain-of-responsibility.png)
 ---
+
+## TEMPLATE METHOD
+
+* Tem por objetivo definir o esqueleto de um algoritmo em uma operação, postergando a definição de alguns passos para subclasses.
+* Permite que suclasses redefinam certos passos de um algoritmo sem mudar sua estrutura.
+* Mantém a ordem de chamada de métodos no algoritmo.
+* Evita a duplicação de código dentro da classe base.
+* Substitui condicionais por polimorfismo.
+* Permite a adição de hooks para serem utilizados pelas subclasses.
+* Utiliza herança em vez de composição.
+* É um padrão utilizado para a sequenciação de métodos.
+* Evita a duplicação de código e permite alterar com facilidade os algoritmos.
+* Aplica o SRP e o OCP do SOLID.
+* Pode violar a LSP do SOLID ao alterar o comportamento dos métodos nas subclasses.
+* Diagrama:
+![diagrama-template-method](/diagramas/30-behavioural-template-method.png)
+---

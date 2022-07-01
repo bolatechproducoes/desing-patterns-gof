@@ -305,3 +305,17 @@
 * Diagrama:
 ![diagrama-mediator](/diagramas/28-behavioural-mediator.png)
 ---
+
+## CHAIN OF RESPONSIBILITY
+
+* Tem como objetivo evitar o acoplamento do rementente de uma solicitação ao seu destinatário, de forma que mais de um objeto tenha a chance de tratar a requisição.
+* Faz o encadeamento dos objetos receptores e passa a solicitação pela cadeia de eventos até que um objeto a trate.
+* É bastante utilizado em requisições HTTP.
+* Permite alterar facilmente a cadeia de eventos.
+* É a base de padrões de projetos bastante utilizados como o Middleware e Saga.
+* O cliente chama o primeiro objeto da cadeia e cada objeto conhece o objeto seguinte (o código cliente pode chamar qualquer objeto da cadeia).
+* Permite que os objetos responsáveis pelo tratamento possam variar em tempo de execução.
+* Aplica o SRP e o OCP do SOLID.
+* Diagrama:
+![diagrama-chain-of-responsibility](/diagramas/29-behavioural-chain-of-responsibility.png)
+---

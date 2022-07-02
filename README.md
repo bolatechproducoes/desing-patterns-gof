@@ -359,7 +359,7 @@
 ## ITERATOR
 
 * Tem a intenção de fornecer uma maneira de acessar sequencialmente os elementos de um objeto agregado sem expor sua representação subjacente.
-* Em vex de chamar a iteração de dentro do objeto que será iterado, delega a um objeto essa finalizadade.
+* Em vez de chamar a iteração de dentro do objeto que será iterado, delega a um objeto essa finalizadade.
 * Permite a utilização de vários iterators.
 * Encapsula os detalhes e monitora a travessia da iteração.
 * Permite a troca de iterador em tempo de execução.
@@ -372,4 +372,18 @@
 * Aplica o SRP do SOLID.
 * Diagrama:
 ![diagrama-iterator](/diagramas/32-behavioural-iterator.png)
+---
+
+## VISITOR
+
+* Tem a intenção de representar uma operação a ser executada sobre os elementos da estrutura de um objeto.
+* Permite separar um algoritmo dos elementos sobre os quais opera.
+* Funciona com a utilização de um método que permite o visitor acessar os elementos.
+* A utilização do visitor é sólicitada pelo código cliente.
+* O visitor pode utilizar e acessar os métodos dos elementos(subclasses).
+* Utilizado para executar um algoritmo em todos os elementos de uma estrutura complexa.
+* Bastante utilizado em conjunto com o padrão composite e iterator.
+* Aplica o SRP e OCP do SOLID.
+* Diagrama:
+![diagrama-visitor](/diagramas/33-behavioural-visitor.png)
 ---

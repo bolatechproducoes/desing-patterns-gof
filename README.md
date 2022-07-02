@@ -10,7 +10,7 @@
 
 ## SINGLETON
 
-* Garantir que uma classe tenha somente uma instância no programa e fornecer um ponto de acesso global para a mesma.
+* Tem a intenção de garantir que uma classe tenha somente uma instância no programa e fornece um ponto de acesso global para a mesma.
 * Geralmente utilizado para acessar recursos compartilhados como acesso à base de dados, interfaces gráficas, sistemas de arquivos, etc...
 * Pode ser utilizado para substituir variáveis globais.
 * Utiliza construtor privado e cria uma única instância através do getter.
@@ -22,7 +22,7 @@
 
 ## BUILDER
 
-* Separar a construção de um objeto complexo da sua representação de modo que o mesmo processo de construção possa criar diferentes representações.
+* Tem a intenção de separar a construção de um objeto complexo da sua representação de modo que o mesmo processo de construção possa criar diferentes representações.
 * Propõe separar o código que cria do código que usa o objeto.
 * Refere-se a criação de objetos com grande complexidade, com construtores muito complexos, formado através da composição de vários objetos ou dependente de algoritmos complexos de criação.
 * Permite construir objetos em etapas.
@@ -35,7 +35,7 @@
 
 ## PROTOTYPE
 
-* Especificar os tipos de objeto a serem criados usando uma instância-protótipo e criar novos objetos pela cópia desse protótipo.
+* Tem a intenção de especificar os tipos de objeto a serem criados usando uma instância-protótipo e criar novos objetos pela cópia desse protótipo.
 * JavaScritp e TypeScript são linguagens baseadas em protótipos. Para isso utiliza o método: Object.create(prototypeObject)
 * É possivel literalmente fazer um objeto herdar de outro.
 * A herança é delegada ao protótipo pelo objeto.
@@ -51,7 +51,7 @@
 
 ## FACTORY METHOD
 
-* Definir a interface para criar um objeto, delegando as subclasses a decisão de que classe instanciar.
+* Tem a intenção de definir a interface para criar um objeto, delegando as subclasses a decisão de que classe instanciar.
 * Permite adiar a instanciação para as subclasses.
 * Factorys são operações que criam objetos.
 * Oculta a lógica de instanciação do código cliente.
@@ -69,7 +69,7 @@
 
 ## ABSTRACT FACTORY
 
-* Fornece interface de criação de familias/grupos de objetos relacionados ou dependentes sem espicificar suas classes concretas.
+* Tem a intenção de fornecer interface de criação de familias/grupos de objetos relacionados ou dependentes sem espicificar suas classes concretas.
 * Geralmente e composto por vários Factory Methods.
 * Tende a agrupar famílias de produtos compatíveis criando uma fábrica concreta para cada grupo/família de objetos.
 * Separa o código que cria do que utiliza os objetos seguindo o SRP do SOLID.
@@ -115,7 +115,7 @@
 
 ## ADAPTER
 
-* Tem como objetivo converter a interface de uma classe em outra classe, que seja esperada pelo código cliente.
+* Tem como intenção converter a interface de uma classe em outra classe, que seja esperada pelo código cliente.
 * Permite que algumas classes trabalhem junto mesmo tendo interfaces imcompatíveis.
 * Funciona com um adaptador, gera compatibilidade entre interfaces incompatíveis.
 * Utilizado para definir limites dentro de camadas da aplicação.
@@ -167,7 +167,7 @@
 
 ## DECORATOR
 
-* Tem como função agregar responsabilidades adicionais a um objeto de forma dinâmica.
+* Tem como intenção agregar responsabilidades adicionais a um objeto de forma dinâmica.
 * Fornece uma alternativa flexível a utilização de subclasses para extender funcionalidades.
 * Adiciona funcionalidades sem alterar o objeto original.
 * Utiliza composição ao invés de herança.
@@ -217,7 +217,7 @@
 ## FLYWEIGHT
 
 * Utilizado para refatoração quando o sistema tem um grande consumo de memória.
-* Tem como objetivo utilizar o compartilhamento para suportar grandes quantidades de objetos de forma granular.
+* Tem como intenção utilizar o compartilhamento para suportar grandes quantidades de objetos de forma granular.
 * Separa as partes mutaveis(extrinseco) das não mutaveis(intrinseco) dos objetos para compartilhar as não mutaveis e diminuir o uso da memória.
 * É um padrão de otimização.
 * Só deve ser utilizado para solucionar problemos de uso excessivo de memória RAM.
@@ -234,7 +234,7 @@
 
 ## STRATEGY
 
-* Tem como objetivo definir uma família de algoritmos, encapsular cada um deles e fazê-los intercambiáveis.
+* Tem como intenção definir uma família de algoritmos, encapsular cada um deles e fazê-los intercambiáveis.
 * Permite que algoritmos variem indendente dos clientes que o utilizam.
 * Permite separar as variações dos algoritmos da regra de negócio - SRP.
 * Define uma família de algoritmos onde cada um tem uma variação diferente.
@@ -249,7 +249,7 @@
 
 ## COMMAND
 
-* Tem como objetivo encapsular uma solicitação como um objeto para permitir a parametrização de diferentes clientes com diferentes solicitações, enfileiramento e registros(logs) de solicitações e suporte a operações que possam ser desfeitas.
+* Tem como intenção encapsular uma solicitação como um objeto para permitir a parametrização de diferentes clientes com diferentes solicitações, enfileiramento e registros(logs) de solicitações e suporte a operações que possam ser desfeitas.
 * Desacopla o objeto que envia a solicitação do que recebe a solicitação.
 * Se baseia em funções de callback na POO.
 * Permite que comandos possam ser enfileirados, armazenados ou desfeitos.
@@ -294,7 +294,7 @@
 
 ## MEDIATOR
 
-* Tem como objetivo encapsular como um conjunto de objetos interagem.
+* Tem a intenção de encapsular como um conjunto de objetos interagem.
 * Promove o acoplamento fraco ao evitar que os objetos se refiram explicitamente uns aos outros, permitindo a variação de interações.
 * Desacopla objetos que estariam diretamente ligados.
 * Centraliza a comunicação em um objeto.
@@ -308,7 +308,7 @@
 
 ## CHAIN OF RESPONSIBILITY
 
-* Tem como objetivo evitar o acoplamento do rementente de uma solicitação ao seu destinatário, de forma que mais de um objeto tenha a chance de tratar a requisição.
+* Tem como intenção evitar o acoplamento do rementente de uma solicitação ao seu destinatário, de forma que mais de um objeto tenha a chance de tratar a requisição.
 * Faz o encadeamento dos objetos receptores e passa a solicitação pela cadeia de eventos até que um objeto a trate.
 * É bastante utilizado em requisições HTTP.
 * Permite alterar facilmente a cadeia de eventos.
@@ -322,7 +322,7 @@
 
 ## TEMPLATE METHOD
 
-* Tem por objetivo definir o esqueleto de um algoritmo em uma operação, postergando a definição de alguns passos para subclasses.
+* Tem como intenção definir o esqueleto de um algoritmo em uma operação, postergando a definição de alguns passos para subclasses.
 * Permite que suclasses redefinam certos passos de um algoritmo sem mudar sua estrutura.
 * Mantém a ordem de chamada de métodos no algoritmo.
 * Evita a duplicação de código dentro da classe base.
@@ -354,4 +354,22 @@
 * É bastante complexo e difícil manter a ordem de envio das notificações.
 * Diagrama:
 ![diagrama-observer](/diagramas/31-behavioural-observer.png)
+---
+
+## ITERATOR
+
+* Tem a intenção de fornecer uma maneira de acessar sequencialmente os elementos de um objeto agregado sem expor sua representação subjacente.
+* Em vex de chamar a iteração de dentro do objeto que será iterado, delega a um objeto essa finalizadade.
+* Permite a utilização de vários iterators.
+* Encapsula os detalhes e monitora a travessia da iteração.
+* Permite a troca de iterador em tempo de execução.
+* Geralmente cada linguagem de programação disponibiliza maneiras de trabalhar com iteradores.
+* Separa a coleção (que fica somente com a resposabilidade de armazenar os dados de forma eficiente) dos iteradores (que se preocupam somente com efetuar a iteração quando solicitados).
+* É possível definir vários iteradores com funções diferentes.
+* Utiliza pouco recurso computacional, não salva os dados, recalcula a cada solicitação de iteração (também pode ser utilizar recursos de pausar a iteração (lazy evaluation)).
+* Pode se utilizar iteradores em paralelo atravessando a mesma coleção (coleção é um conjunto de dados relacionados, como uma pilha ou listas relacionadas).
+* Facilita a inclusão de novos iteradores.
+* Aplica o SRP do SOLID.
+* Diagrama:
+![diagrama-iterator](/diagramas/32-behavioural-iterator.png)
 ---

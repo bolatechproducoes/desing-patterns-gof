@@ -332,3 +332,25 @@
 - Facilita a comunicação entre objetos em tempo de execução.
 - Aplica o SRP e OCP do SOLID.
 - É bastante complexo e difícil manter a ordem de envio das notificações.
+
+   === ITERATOR ===
+
+- Tem a intenção de fornecer uma maneira de acessar sequencialmente os elementos
+  de um objeto agregado sem expor sua representação subjacente.
+- Em vex de chamar a iteração de dentro do objeto que será iterado, delega a um
+  objeto essa finalizadade.
+- Permite a utilização de vários iterators.
+- Encapsula os detalhes e monitora a travessia da iteração.
+- Permite a troca de iterador em tempo de execução.
+- Geralmente cada linguagem de programação disponibiliza maneiras de trabalhar com
+  iteradores.
+- Separa a coleção (que fica somente com a resposabilidade de armazenar os dados de
+  forma eficiente) dos iteradores (que se preocupam somente com efetuar a iteração
+  quando solicitados).
+- É possível definir vários iteradores com funções diferentes.
+- Utiliza pouco recurso computacional, não salva os dados, recalcula a cada solicitação
+  de iteração (também pode ser utilizar recursos de pausar a iteração (lazy evaluation)).
+- Pode se utilizar iteradores em paralelo atravessando a mesma coleção (coleção é um
+  conjunto de dados relacionados, como uma pilha ou listas relacionadas).
+- Facilita a inclusão de novos iteradores.
+- Aplica o SRP do SOLID.

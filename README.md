@@ -2,6 +2,32 @@
 * Os Padrões de Projeto (Desing Patterns) da Gang of Four (GoF) são orientações de como solucionar problemas e construir códigos utilizando padrões. Estas são sugestões e podem ser aplicadas de diversas formas para atender necessidades específicas de cada sistema. Estes padrões são descritos no livro [Desing Patterns - Elements of Reusable Object-Oriented Software](https://docero.com.br/doc/see055n) escrito por Erich Gamma, John Vlissides, Richard Helm e Ralph Johnson a guangue dos quatro (GoF).
 * Este repositório foi criado a partir das aulas da sessão de Desing Patterns do [Curso de JavaScript e TypeScript](https://www.udemy.com/course/curso-de-javascript-moderno-do-basico-ao-avancado/) do professor [Luiz Otávio Miranda](https://www.udemy.com/user/luiz-otavio-miranda/) na Udemy. As anotações abaixo são as que fiz durante as aulas e os diagramas foram baixados do [repositório](https://github.com/luizomf/design-patterns-typescript) do professor Luiz Otávio, as vídeo aulas desta sessão podem ser encontradas no seu canal do YouTube [clicando aqui](https://www.youtube.com/watch?v=MqddY6Ochkc&list=PLbIBj8vQhvm0VY5YrMrafWaQY2EnJ3j8H).
 ---
+#### [CREATIONAL PATTERNS](https://github.com/bolatechproducoes/desing-patterns-gof#creational-patterns)
+1. ###### [Singleton](https://github.com/bolatechproducoes/desing-patterns-gof#singleton)
+2. ###### [Builder](https://github.com/bolatechproducoes/desing-patterns-gof#builder)
+3. ###### [Prototype](https://github.com/bolatechproducoes/desing-patterns-gof#prototype)
+4. ###### [Factory Method](https://github.com/bolatechproducoes/desing-patterns-gof#factory-method)
+5. ###### [Abstract Factory](https://github.com/bolatechproducoes/desing-patterns-gof#abstract-factory)
+#### [STRUCTURAL PATTERNS](https://github.com/bolatechproducoes/desing-patterns-gof#structural-patterns)
+1. ###### [Composite](https://github.com/bolatechproducoes/desing-patterns-gof#composite)
+2. ###### [Adapter](https://github.com/bolatechproducoes/desing-patterns-gof#adapter)
+3. ###### [Bridge](https://github.com/bolatechproducoes/desing-patterns-gof#bridge)
+4. ###### [Decorator](https://github.com/bolatechproducoes/desing-patterns-gof#decorator)
+5. ###### [Façade](https://github.com/bolatechproducoes/desing-patterns-gof#fa%C3%A7ade)
+6. ###### [Proxy](https://github.com/bolatechproducoes/desing-patterns-gof#proxy)
+7. ###### [Flyweight](https://github.com/bolatechproducoes/desing-patterns-gof#flyweight)
+#### [BEHAVIOURAL PATTERNS](https://github.com/bolatechproducoes/desing-patterns-gof#behavioural-patterns)
+1. ###### [Strategy](https://github.com/bolatechproducoes/desing-patterns-gof#strategy)
+2. ###### [Command](https://github.com/bolatechproducoes/desing-patterns-gof#command)
+3. ###### [Memento](https://github.com/bolatechproducoes/desing-patterns-gof#memento)
+4. ###### [State](https://github.com/bolatechproducoes/desing-patterns-gof#state)
+5. ###### [Mediator](https://github.com/bolatechproducoes/desing-patterns-gof#mediator)
+6. ###### [Chain of Resposibility](https://github.com/bolatechproducoes/desing-patterns-gof#chain-of-responsibility)
+7. ###### [Template Method](https://github.com/bolatechproducoes/desing-patterns-gof#template-method)
+8. ###### [Observer](https://github.com/bolatechproducoes/desing-patterns-gof#observer)
+9. ###### [Iterator](https://github.com/bolatechproducoes/desing-patterns-gof#iterator)
+9. ###### [Visitor](https://github.com/bolatechproducoes/desing-patterns-gof#visitor)
+---
 # CREATIONAL PATTERNS
 
 * Padrões de criação, tem como objetivo abstrair o processo de instanciação dos objetos e encapsular o conhecimento sobre as classes concretas utilizadas.

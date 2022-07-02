@@ -44,6 +44,7 @@
 * Utilizado para substituir variáveis globais.
 * Diagrama:
 ![diagrama-singleton](/diagramas/01-creational-singleton.png)
+Exemplo de Código: https://github.com/bolatechproducoes/desing-patterns-gof/tree/master/src/creational/singleton
 ---
 
 ## BUILDER
@@ -57,6 +58,7 @@
 * É um padrão complexo.
 * Diagrama:
 ![diagrama-builder](/diagramas/02-creational-builder.png)
+Exemplo de Código: https://github.com/bolatechproducoes/desing-patterns-gof/tree/master/src/creational/builder
 ---
 
 ## PROTOTYPE
@@ -73,6 +75,7 @@
 * Não deixa as classes visiveis para os códigos que utilizam os objetos clone.
 * Diagrama:
 ![diagrama-prototype](/diagramas/03-creational-prototype.png)
+Exemplo de Código: https://github.com/bolatechproducoes/desing-patterns-gof/tree/master/src/creational/prototype
 ---
 
 ## FACTORY METHOD
@@ -91,12 +94,13 @@
 * Utilizado para eliminar a duplicação de código na criação de objetos.
 * Diagrama:
 ![diagrama-factory-method](/diagramas/04-creational-factory-method.png)
+Exemplo de Código: https://github.com/bolatechproducoes/desing-patterns-gof/tree/master/src/creational/factory-method
 ---
 
 ## ABSTRACT FACTORY
 
-* Tem a intenção de fornecer interface de criação de familias/grupos de objetos relacionados ou dependentes sem espicificar suas classes concretas.
-* Geralmente e composto por vários Factory Methods.
+* Tem a intenção de fornecer interface de criação de familias/grupos de objetos relacionados ou dependentes sem especificar suas classes concretas.
+* Geralmente é composto por vários Factory Methods.
 * Tende a agrupar famílias de produtos compatíveis criando uma fábrica concreta para cada grupo/família de objetos.
 * Separa o código que cria do que utiliza os objetos seguindo o SRP do SOLID.
 * Facilita a implementação de novos grupos/famílias de objetos seguindo o OCP do SOLID.
@@ -117,6 +121,7 @@
 ---
 * Exemplo 3:
 ![diagrama-abstract-factory-example3](/diagramas/08-creational-abstract-factory-example-3.png)
+Exemplo de Código: https://github.com/bolatechproducoes/desing-patterns-gof/tree/master/src/creational/abstract-factory
 ---
 
 # STRUCTURAL PATTERNS
@@ -137,6 +142,7 @@
 * Tende a quebrar o padrão ISP do SOLID.
 * Diagrama:
 ![diagrama-composite](/diagramas/09-structural-composite.png)
+Exemplo de Código: https://github.com/bolatechproducoes/desing-patterns-gof/tree/master/src/structural/composite
 ---
 
 ## ADAPTER
@@ -158,6 +164,7 @@
 ---
 * Diagrama com Objeto:
 ![diagrama-adapter-object](/diagramas/11-structural-adapter-object.png)
+Exemplo de Código: https://github.com/bolatechproducoes/desing-patterns-gof/tree/master/src/structural/adapter
 ---
 
 ## BRIDGE
@@ -189,6 +196,7 @@
 ---
 * Solução:
 ![diagrama-bridge-solution](/diagramas/18-structural-bridge-solution.png)
+Exemplo de Código: https://github.com/bolatechproducoes/desing-patterns-gof/tree/master/src/structural/bridge
 ---
 
 ## DECORATOR
@@ -208,6 +216,7 @@
 * Aplica OCP do SOLID.
 * Diagrama:
 ![diagrama-decorator](/diagramas/19-structural-decorator.png)
+Exemplo de Código: https://github.com/bolatechproducoes/desing-patterns-gof/tree/master/src/structural/decorator
 ---
 
 ## FAÇADE
@@ -221,6 +230,7 @@
 * Tem como vantagem facilitar o acesso as entradas do sistema.
 * Diagrama:
 ![diagrama-façade](/diagramas/20--structural-facade.png)
+Exemplo de Código: https://github.com/bolatechproducoes/desing-patterns-gof/tree/master/src/structural/facade
 ---
 
 ## PROXY
@@ -228,7 +238,7 @@
 * Tem como intenção fornecer um substituto ou marcador de localização para outro objeto com o objetivo de controlar o acesso a esse objeto.
 * Utiliza a composição como o Composite e Decorator.
 * Utiliza um objeto proxy que finge ser um objeto real.
-* Utilizado para controle de acesso, logs, ache, lazy instantiation, lazy evaluation e distribuição de serviços.
+* Utilizado para controle de acesso, logs, hach, lazy instantiation, lazy evaluation e distribuição de serviços.
 * Escolhe como e quando repassar chamadas de métodos para o objeto real.
 * Pode executar ações antes e depois das chamadas de método do objeto real.
 * Tem variações: proxy virtual, proxy remoto, proxy de proteção, proxy inteligente, proxy de logs, etc...
@@ -239,6 +249,7 @@
 * Implementa o OCP do SOLID.
 * Diagrama:
 ![diagrama-proxy](/diagramas/21-structural-proxy.png)
+Exemplo de Código: https://github.com/bolatechproducoes/desing-patterns-gof/tree/master/src/structural/proxy
 ---
 ## FLYWEIGHT
 
@@ -250,6 +261,7 @@
 * Só utilize se for realmente necessário e a maioria dos estados do objeto puderem se tornar extrinsecos.
 * Diagrama:
 ![diagrama-flyweight](/diagramas/22-structural-flyweight.png)
+Exemplo de Código: https://github.com/bolatechproducoes/desing-patterns-gof/tree/master/src/structural/flyweight
 ---
  # BEHAVIOURAL PATTERNS
 
@@ -266,11 +278,12 @@
 * Define uma família de algoritmos onde cada um tem uma variação diferente.
 * Permite a troca de algoritmos em tempo de execução através da composição.
 * Permite criar varios algoritmos sem a necessidade de condicionais.
-* Utilize para substituir condicionais que só alteram o valor final de um algoritmo.
+* Utilizado para substituir condicionais que só alteram o valor final de um algoritmo.
 * Aplica SRP e OCP do SOLID.
 * O resultado do Strategy pode ser obtido através de funções.
 * Diagrama:
 ![diagrama-strategy](/diagramas/23-behavioural-strategy.png)
+Exemplo de Código: https://github.com/bolatechproducoes/desing-patterns-gof/tree/master/src/behavioural/strategy
 ---
 
 ## COMMAND
@@ -284,6 +297,7 @@
 * Utiliza composição ao invés de herança.
 * Diagrama:
 ![diagrama-command](/diagramas/24-behavioural-command.png)
+Exemplo de Código: https://github.com/bolatechproducoes/desing-patterns-gof/tree/master/src/behavioural/command
 ---
 
 ## MEMENTO
@@ -300,6 +314,7 @@
 * Aplica o SRP do SOLID.
 * Diagrama:
 ![diagrama-memento](/diagramas/25-behavioural-memento.png)
+Exemplo de Código: https://github.com/bolatechproducoes/desing-patterns-gof/tree/master/src/behavioural/memento
 ---
 
 ## STATE
@@ -316,6 +331,7 @@
 ---
 * Exemplo:
 ![diagrama-state-exemplo](/diagramas/27-behavioural-state-exemplo.png)
+Exemplo de Código: https://github.com/bolatechproducoes/desing-patterns-gof/tree/master/src/behavioural/state
 ---
 
 ## MEDIATOR
@@ -327,9 +343,10 @@
 * Serve para diminuir ou extinguir o acoplamento direto entre classes.
 * Substitui a comunicação muitos-para-muitos pela um-para-muitos.
 * Encapsula a comunicação entre objetos.
-* Utilizar com cuidado para não se tornar uma "god class".
+* Deve se utilizar com cuidado para não se tornar uma "god class".
 * Diagrama:
 ![diagrama-mediator](/diagramas/28-behavioural-mediator.png)
+Exemplo de Código: https://github.com/bolatechproducoes/desing-patterns-gof/tree/master/src/behavioural/mediator
 ---
 
 ## CHAIN OF RESPONSIBILITY
@@ -344,6 +361,7 @@
 * Aplica o SRP e o OCP do SOLID.
 * Diagrama:
 ![diagrama-chain-of-responsibility](/diagramas/29-behavioural-chain-of-responsibility.png)
+Exemplo de Código: https://github.com/bolatechproducoes/desing-patterns-gof/tree/master/src/behavioural/chain-of-resposibility
 ---
 
 ## TEMPLATE METHOD
@@ -361,6 +379,7 @@
 * Pode violar a LSP do SOLID ao alterar o comportamento dos métodos nas subclasses.
 * Diagrama:
 ![diagrama-template-method](/diagramas/30-behavioural-template-method.png)
+Exemplo de Código: https://github.com/bolatechproducoes/desing-patterns-gof/tree/master/src/behavioural/template-method
 ---
 
 ## OBSERVER
@@ -380,6 +399,7 @@
 * É bastante complexo e difícil manter a ordem de envio das notificações.
 * Diagrama:
 ![diagrama-observer](/diagramas/31-behavioural-observer.png)
+Exemplo de Código: https://github.com/bolatechproducoes/desing-patterns-gof/tree/master/src/behavioural/observer
 ---
 
 ## ITERATOR
@@ -398,6 +418,7 @@
 * Aplica o SRP do SOLID.
 * Diagrama:
 ![diagrama-iterator](/diagramas/32-behavioural-iterator.png)
+Exemplo de Código: https://github.com/bolatechproducoes/desing-patterns-gof/tree/master/src/behavioural/iterator
 ---
 
 ## VISITOR
@@ -412,4 +433,5 @@
 * Aplica o SRP e OCP do SOLID.
 * Diagrama:
 ![diagrama-visitor](/diagramas/33-behavioural-visitor.png)
+Exemplo de Código: https://github.com/bolatechproducoes/desing-patterns-gof/tree/master/src/behavioural/visitor
 ---
